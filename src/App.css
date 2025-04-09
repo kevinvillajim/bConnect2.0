@@ -1,0 +1,152 @@
+.font-righteous {
+	font-family: "Righteous", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.font-times {
+	font-family: "Times New Roman", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+.font-arial {
+	font-family: "Arial", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+#whatsapp-btn {
+	background-color: rgb(77, 194, 71);
+	width: 65px;
+	height: 65px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#whatsapp-link {
+	position: fixed;
+	bottom: 20px;
+	right: 50px;
+}
+#whatsapp-link:hover > :first-child {
+	--escala: 1.2;
+	cursor: pointer;
+}
+#whatsapp-link > :first-child {
+	transform: scale(var(--escala, 1));
+	transition: transform 0.25s;
+}
+#hamb {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	#products,
+	#videos,
+	#imagenes,
+	#aliados,
+	#us,
+	#cards-pantallas,
+	#cards-seguridad {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#aliados {
+		margin-top: 5rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5rem;
+	}
+	#footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#footer > div {
+		width: 100%;
+	}
+	#menu_footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+	}
+	.i-center {
+		text-align: center;
+		margin-top: 0.5rem;
+	}
+	.o-center {
+		display: flex;
+		justify-content: space-evenly;
+		margin-top: 1rem;
+	}
+	#banner-text {
+		width: 100%;
+		padding: 0, 1rem;
+	}
+	#inone,
+	#onone {
+		display: none;
+	}
+	#hamb {
+		display: inline;
+		width: 50px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 1rem;
+	}
+	#uss {
+		font-size: 20px;
+		padding: 0 2rem;
+	}
+	#pantallas,
+	#seguridad,
+	#ciberseguridad,
+	#tecnologia {
+		display: flex;
+		flex-direction: column;
+		padding: 5rem 2rem;
+	}
+	#pantallas > img,
+	#pantallas > div,
+	#seguridad > img,
+	#seguridad > div,
+	#ciberseguridad > img,
+	#ciberseguridad > div,
+	#tecnologia > img,
+	#tecnologia > div {
+		width: 100%;
+		text-align: center;
+		padding: 1rem;
+	}
+	#widthfull,
+	#widthfull2,
+	#widthfull3,
+	#widthfull4,
+	#widthfull5 {
+		width: 100%;
+		padding: 0 2rem;
+	}
+
+	#containersc,
+	#containersc2 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 2rem;
+	}
+}
