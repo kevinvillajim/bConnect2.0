@@ -1,3 +1,229 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Importar fuentes según el manual de marca */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap'); /* Como sustituto de Montserrat Classic */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap');
+/* Helvetica normalmente viene pre-instalada en los sistemas */
+
+/* Fontface para Righteous (usado en componentes legacy) */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* Definiciones de clases específicas para fuentes */
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-helvetica {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.font-publicsans {
+  font-family: "Public Sans", sans-serif;
+}
+
+.font-righteous {
+  font-family: "Righteous", sans-serif;
+}
+
+/* Mantenemos las definiciones antiguas para compatibilidad */
+.font-times {
+  font-family: "Times New Roman", sans-serif;
+}
+
+.font-arial {
+  font-family: "Arial", sans-serif;
+}
+
+/* Estilos de texto */
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.8s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.8s ease-out forwards;
+}
+
+/* Formas hexagonales basadas en el diseño del manual */
+.hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+/* Estilos para elementos con forma de abeja (inspirado en el logo) */
+.bee-shape {
+  position: relative;
+}
+
+.bee-shape::before {
+  content: '';
+  position: absolute;
+  background-image: url('/path-to-bee-icon.svg'); /* Reemplazar con la ruta correcta del icono */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #products,
+  #videos,
+  #imagenes,
+  #aliados,
+  #us,
+  #cards-pantallas,
+  #cards-seguridad {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #aliados {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+  
+  #footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #footer > div {
+    width: 100%;
+  }
+  
+  #menu_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .i-center {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  .o-center {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+  }
+  
+  #banner-text {
+    width: 100%;
+    padding: 0, 1rem;
+  }
+  
+  #inone,
+  #onone {
+    display: none;
+  }
+  
+  #hamb {
+    display: inline;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  
+  #uss {
+    font-size: 20px;
+    padding: 0 2rem;
+  }
+  
+  #pantallas,
+  #seguridad,
+  #ciberseguridad,
+  #tecnologia {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 2rem;
+  }
+  
+  #pantallas > img,
+  #pantallas > div,
+  #seguridad > img,
+  #seguridad > div,
+  #ciberseguridad > img,
+  #ciberseguridad > div,
+  #tecnologia > img,
+  #tecnologia > div {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  #widthfull,
+  #widthfull2,
+  #widthfull3,
+  #widthfull4,
+  #widthfull5 {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  #containersc,
+  #containersc2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+}

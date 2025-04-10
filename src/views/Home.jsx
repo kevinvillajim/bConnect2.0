@@ -1,16 +1,23 @@
-import Header from "../components/Header";
-import Banner from "../components/Banner";
+// import Header from "../components/Header";
+
 import Card from "../components/Card";
 import Imgs from "../components/Imgs";
 import Aliados from "../components/Aliados";
 import Rotulo from "../components/Rotulo";
 import Footer from "../components/Footer";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import Carousel from "../components/Carousel";
+import BeeCard from "../components/Cards";
+import CarrouselSimple from "../components/CarrouselSimple";
+import ProductCarouselExample from "../components/ProductCarousel";
+import Card2 from "../components/Card2"
+import HoneySeparator from "../components/HoneySeparator";
+import HoneyProgressBar from "../components/HoneyProgressBar";
 
 function Home() {
 	return (
 		<>
-			<div className="w-screen">
+			<div className="w-screen md:px-[7rem] lg:px-[15rem]">
 				<a
 					id="whatsapp-link"
 					href="https://api.whatsapp.com/send?phone=+593962966301&text=Buenas%20tardes,%20deseo%20mas%20informaci%C3%B3n,%20vengo%20desde%20la%20p%C3%A1gina%20web."
@@ -20,8 +27,28 @@ function Home() {
 						<WhatsAppIcon sx={{width: "45px", height: "45px", color: "#fff"}} />
 					</div>
 				</a>
-				<Header />
-				<Banner bgImg="banner-home.jpg" link="#products" />
+				{/* <Header /> */}
+				<Carousel />
+				<BeeCard
+					title="Servicios de Consultoría"
+					description="Ofrecemos soluciones personalizadas para optimizar los procesos de su empresa."
+					imageUrl="/api/placeholder/400/320"
+					category="Consultoría"
+					featured={true}
+				/>
+				<CarrouselSimple />
+				<ProductCarouselExample />
+				<Card2
+					title="Soluciones Personalizadas"
+					description="Colaboramos estrechamente con nuestros clientes, entendiendo sus necesidades para ofrecerles soluciones tecnológicas personalizadas."
+					imageUrl="/placeholder.svg?height=400&width=600"
+					altText="Soluciones Personalizadas"
+					link="/servicios/soluciones"
+					icon={<WhatsAppIcon className="h-5 w-5 text-[#28538C]" />}
+				/>
+				<HoneySeparator />
+				<div className="w-[100px] h-[5px">
+				<HoneyProgressBar progress={70}/></div>
 				<div id="products" className="flex justify-center py-[1rem] gap-4">
 					<Card
 						img="pantallas.png"
