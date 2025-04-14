@@ -1,5 +1,4 @@
-// import Header from "../components/Header";
-
+import Header from "../components/Header";
 import Card from "../components/Card";
 import Imgs from "../components/Imgs";
 import Aliados from "../components/Aliados";
@@ -9,10 +8,8 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Carousel from "../components/Carousel";
 import BeeCard from "../components/Cards";
 import CarrouselSimple from "../components/CarrouselSimple";
-import ProductCarouselExample from "../components/ProductCarousel";
+import DisplayCarouselExample from "../components/DisplayCarouselExample";
 import Card2 from "../components/Card2"
-import HoneySeparator from "../components/HoneySeparator";
-import HoneyProgressBar from "../components/HoneyProgressBar";
 
 function Home() {
 	return (
@@ -27,17 +24,26 @@ function Home() {
 						<WhatsAppIcon sx={{width: "45px", height: "45px", color: "#fff"}} />
 					</div>
 				</a>
-				{/* <Header /> */}
+				<Header />
 				<Carousel />
-				<BeeCard
-					title="Servicios de Consultoría"
-					description="Ofrecemos soluciones personalizadas para optimizar los procesos de su empresa."
-					imageUrl="/api/placeholder/400/320"
-					category="Consultoría"
-					featured={true}
-				/>
+				<div className="flex justify-center my-[2rem] gap-3">
+					<BeeCard
+						title="Servicios de Ciberseguridad"
+						description="Ofrecemos soluciones personalizadas para optimizar la seguridad de la información de tu empresa....."
+						imageUrl="https://universidadeuropea.com/resources/media/images/analista-ciberseguridad-800x450.width-1200.format-webp.webp"
+						category="Ciberseguridad"
+						featured={true}
+					/>
+					<BeeCard
+						title="Pantallas Interactivas"
+						description="Ofrecemos soluciones personalizadas para optimizar la inovacion de tu unidad educativa ........."
+						imageUrl="https://astrosonico.com/wp-content/uploads/2024/06/OneScreen-X17-T6-1.jpg"
+						category="Pantallas Interactivas"
+						featured={true}
+					/>
+				</div>
 				<CarrouselSimple />
-				<ProductCarouselExample />
+				<DisplayCarouselExample />
 				<Card2
 					title="Soluciones Personalizadas"
 					description="Colaboramos estrechamente con nuestros clientes, entendiendo sus necesidades para ofrecerles soluciones tecnológicas personalizadas."
@@ -46,9 +52,6 @@ function Home() {
 					link="/servicios/soluciones"
 					icon={<WhatsAppIcon className="h-5 w-5 text-[#28538C]" />}
 				/>
-				<HoneySeparator />
-				<div className="w-[100px] h-[5px">
-				<HoneyProgressBar progress={70}/></div>
 				<div id="products" className="flex justify-center py-[1rem] gap-4">
 					<Card
 						img="pantallas.png"

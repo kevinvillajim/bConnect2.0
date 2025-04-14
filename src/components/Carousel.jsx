@@ -29,6 +29,7 @@ const SamsungCarousel = () => {
 			cta: "Más información",
 			ctaLink: "/latin/smartphones/galaxy-s25-ultra/",
 			textColor: "white",
+			contentPosition: "top-[65%]",
 			bgImage:
 				"https://images.samsung.com/is/image/samsung/assets/latin/home/18-02/HOME_P3_Main-KV_1440x640_pc_LTR_ticker.jpg",
 			mobileBgImage:

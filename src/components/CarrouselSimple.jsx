@@ -87,7 +87,8 @@ const CarrouselSimple = () => {
 				text: "Comprar ahora",
 				link: "https://shop.samsung.com/latin/bespoke-ai",
 			},
-			imageUrl: "/api/placeholder/1440/810",
+			imageUrl:
+				"https://www.audiovideosaladejuntas.com/images/pizarron/banner.jpg",
 		},
 		{
 			title: "Galaxy S24",
@@ -98,7 +99,8 @@ const CarrouselSimple = () => {
 				text: "Descubrir más",
 				link: "https://www.samsung.com/galaxy-s24",
 			},
-			imageUrl: "/api/placeholder/1440/810",
+			imageUrl:
+				"https://t4.ftcdn.net/jpg/02/69/15/39/360_F_269153974_8x5Mbf1vYy67OKDq7mArqXN5gZvixMnw.jpg",
 		},
 		{
 			title: "Neo QLED",
@@ -109,7 +111,8 @@ const CarrouselSimple = () => {
 				text: "Ver detalles",
 				link: "https://www.samsung.com/tvs/qled-tv",
 			},
-			imageUrl: "/api/placeholder/1440/810",
+			imageUrl:
+				"https://www.ricoh-americalatina.com/media-library/pantallas-interactivas-1.jpg?id=32328186&width=1000&quality=95",
 		},
 		{
 			title: "Electrodomésticos",
@@ -120,7 +123,8 @@ const CarrouselSimple = () => {
 				text: "Explorar",
 				link: "https://www.samsung.com/home-appliances",
 			},
-			imageUrl: "/api/placeholder/1440/810",
+			imageUrl:
+				"https://concepto.de/wp-content/uploads/2014/08/tecnologia-e1551386726435.jpg",
 		},
 	];
 
